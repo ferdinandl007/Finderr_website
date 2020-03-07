@@ -2495,7 +2495,7 @@ header.video-bg {
   position: relative;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 799px) {
   .mobile-app {
     padding-top: 80px;
   }
@@ -2515,9 +2515,9 @@ header.video-bg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../images/mobile-ap-bg.jpg) no-repeat scroll center top;
+  background: url(../images/Canva\ -\ Person\ Holding\ Smartphone.png) no-repeat scroll center top;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .mobile-app .mobile-img {
@@ -2538,14 +2538,14 @@ header.video-bg {
   font: 600 50px/1 "Poppins", sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .mobile-app h2 {
     margin: 10px 0;
     font-size: 30px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .mobile-app h2 {
     margin-top: 88px;
   }
@@ -2563,7 +2563,7 @@ header.video-bg {
   opacity: 0.77;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .mobile-app p {
     font-size: 15px;
     line-height: 22px;
@@ -2577,7 +2577,7 @@ header.video-bg {
   margin-bottom: 15px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 791px) {
   .mobile-app .dload-link img {
     max-width: 150px;
   }
