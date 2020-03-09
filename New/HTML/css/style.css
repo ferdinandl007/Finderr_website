@@ -183,7 +183,7 @@ li {
 }
 
 .btn-primary.btn-lg {
-  padding: 0 85px;
+  padding: 10px 85px;
   border-radius: 60px;
   font: 500 27px/72px "Poppins", sans-serif;
   margin-bottom: 77px;
@@ -191,7 +191,7 @@ li {
 
 @media (max-width: 991px) {
   .btn-primary.btn-lg {
-    padding: 0 70px;
+    padding: 10px 70px;
     font-size: 18px;
     line-height: 60px;
     margin-bottom: 15px;
@@ -200,7 +200,7 @@ li {
 
 @media (max-width: 767px) {
   .btn-primary.btn-lg {
-    padding: 0 65px;
+    padding: 10px 65px;
   }
 }
 

@@ -88,18 +88,18 @@ li {
     color: #FFF;
     padding: 0 28px;
     &.btn-lg {
-        padding: 0 85px;
+        padding: 10px 85px;
         border-radius: 60px;
         font: 500 27px/72px $poppin;
         margin-bottom: 77px;
         @media (max-width: 991px) {
-            padding: 0 70px;
+            padding: 10px 70px;
             font-size: 18px;
             line-height: 60px;
             margin-bottom: 15px;
         }
         @media (max-width: 767px) {
-            padding: 0 65px;
+            padding: 5px 65px;
         }
     }
 }

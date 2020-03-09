@@ -20,7 +20,7 @@
 // CONFIG: Enable debug mode. This means we'll log requests into 'ipn.log' in the same directory.
 // Especially useful if you encounter network errors or other intermittent problems with IPN (validation).
 // Set this to 0 once you go live or don't require logging.
-define("DEBUG", FALSE);
+define("DEBUG", TRUE);
 
 // Set to 0 once you're ready to go live
 define("USE_SANDBOX", 1);
@@ -133,7 +133,8 @@ if (strcmp ($res, "VERIFIED") == 0) {
 	$item_name = $_POST['item_name'];
 	$item_number = $_POST['item_number'];
 	$payment_status = $_POST['payment_status'];
-	$payment_amount = $_POST['mc_gross'];
+	// $payment_amount = $_POST['mc_gross'];
+	// $payment_amount = 500;
 	$payment_currency = $_POST['mc_currency'];
 	$txn_id = $_POST['txn_id'];
 	$receiver_email = $_POST['receiver_email'];

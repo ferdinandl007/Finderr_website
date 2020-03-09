@@ -6,9 +6,11 @@ error_reporting(0);
  * ------------------------------------
  */
  
-$to    = "test@surjithctly.in"; // <--- Your email ID here
+$to    = "info@finderr.cf"; // <--- Your email ID here
+$to2   = "ferdinand@finderr.cf";
+$to3   = "ck@finderr.cf";
 
-$server_email = 'webmaster@web3canvas.com';  // Your server email to authenticate outgoing emails. eg: name@yourdomain.com
+$server_email = "info@finderr.cf";  // Your server email to authenticate outgoing emails. eg: name@yourdomain.com
 /*
  * ------------------------------------
  * END CONFIGURATION
@@ -49,11 +51,16 @@ $mail->setFrom($server_email, $name);
 $mail->addReplyTo($email, $name);
 //Set who the message is to be sent to
 $mail->addAddress($to);
+$mail->addAddress($to1);
+$mail->addAddress($to2);
+
 //Set the HTML True
 $mail->isHTML(true);
 
 $mail->Subject = $subject;
 $mail->Body = $msg;
+
+
 
 //send the message, check for errors
 if (!$mail->send()) {

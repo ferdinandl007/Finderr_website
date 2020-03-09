@@ -6,7 +6,9 @@
  * ------------------------------------
  */
  
-$to    = "test@surjithctly.in"; // <--- Your email ID here
+$to    = "info@finderr.cf"; // <--- Your email ID here
+$to2   = "ferdinand@finderr.cf";
+$to3   = "ck@finderr.cf";
 
 /*
  * ------------------------------------
@@ -32,6 +34,8 @@ $headers .= "From: webmaster@web3canvas.com"."\r\n"."Reply-To: ".$email."\r\n" ;
 $msg     = "Hello,<br/><br/> You have received a message from your website contact form. Here are the details. <br/><br/> From: $name<br/> Email: $email <br/>Message: $msg <br><br> -- <br>This e-mail was sent from a contact form on $website";
 	
    $mail =  mail($to, $subject, $msg, $headers);
+   $mail =  mail($to1, $subject, $msg, $headers);
+   $mail =  mail($to2, $subject, $msg, $headers);
   if($mail)
 	{
 		echo 'success';

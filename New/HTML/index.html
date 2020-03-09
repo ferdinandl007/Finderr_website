@@ -50,7 +50,7 @@ Surjith S M / @surjithctly
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--========== Page Ttile ==========-->
-    <title>ProLand - Product Landing Page Template</title>
+    <title>Finderr</title>
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
     <!-- CSS Plugin Files -->
@@ -65,7 +65,8 @@ Surjith S M / @surjithctly
     <!-- Preloader -->
     <link href="css/plugins/preloader.css" rel="stylesheet">
     <!--========== Main Styles==========-->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="sass/style.css" rel="stylesheet">
     <!-- Theme CSS (For Available Color Options, See Documentation ) -->
     <link href="css/themes/blue-orange.css" rel="stylesheet">
     <!--========== HTML5 shim and Respond.js (Required) ==========-->
@@ -132,8 +133,8 @@ Surjith S M / @surjithctly
                 <a href="#product-choose" class=" btn-primary btn-lg">Place your order now</a>
                 <div class="row apple-watch">
                     <img src="images/eveCam.png" alt="" class="watch_img" width="50%">
-                    <!--==========Feature Noted top right==========-->
-                    <div class="feature-note right top wow fadeInRight">
+                    <!-- ==========Feature Noted top right========== -->
+                    <!-- <div class="feature-note right top wow fadeInRight">
                         <div class="indicator">
                             <div class="plus-icon">
                                 <span class="plus">+</span>
@@ -142,9 +143,9 @@ Surjith S M / @surjithctly
                         <div class="feature-name">
                             Up to 1080p video streaming
                         </div>
-                    </div>
+                    </div> -->
                     <!--==========Feature Noted top left==========-->
-                    <div class="feature-note left top wow fadeInLeft">
+                    <!-- <div class="feature-note left top wow fadeInLeft">
                         <div class="indicator">
                             <div class="plus-icon">
                                 <span class="plus">+</span>
@@ -153,9 +154,9 @@ Surjith S M / @surjithctly
                         <div class="feature-name">
                             4K
                         </div>
-                    </div>
+                    </div> -->
                     <!--==========Feature Noted bottom right==========-->
-                    <div class="feature-note right bottom wow fadeInUp">
+                    <!-- <div class="feature-note right bottom wow fadeInUp">
                         <div class="indicator">
                             <div class="plus-icon">
                                 <span class="plus">+</span>
@@ -164,9 +165,9 @@ Surjith S M / @surjithctly
                         <div class="feature-name">
                             180 degrees
                         </div>
-                    </div>
+                    </div> -->
                     <!--==========Feature Noted bottom left==========-->
-                    <div class="feature-note left bottom wow fadeInLeft">
+                    <!-- <div class="feature-note left bottom wow fadeInLeft">
                         <div class="indicator">
                             <div class="plus-icon">
                                 <span class="plus">+</span>
@@ -175,7 +176,7 @@ Surjith S M / @surjithctly
                         <div class="feature-name">
                             AC power adapter
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -354,7 +355,7 @@ Surjith S M / @surjithctly
     </section>
     <!--==========Our Collection==========-->
    
-   <section class="row contact-box" id="Volenteer">
+   <section class="row contact-box-container" id="Volenteer">
        <div class="container" >
            <div class="row section-header v2 wow fadeInUp">
                <!-- Flippable Contact Box -->
@@ -724,7 +725,7 @@ Surjith S M / @surjithctly
             </div>
         </div>
         <div class="product-desc">
-            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="POST" target="_top" class="choose-form row m0" id="paypal-regn">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="POST" target="_top" class="choose-form row m0" id="paypal-regn">
                 <div id="js-product-info" class="product-info">
 
                     <h4 class="name">Finderr's Camera</h4>
@@ -823,11 +824,11 @@ Surjith S M / @surjithctly
                     -->
                     <!-- Verify Paypal Payment - URL of PHP file. -->
                     <!-- You have to give the Same URL also in Paypal => Profile => Selling Tools => IPN => Notfication URL -->
-                    <input type="hidden" name="notify_url" value="https://demo.web3canvas.com/themeforest/proland/php/verify-ipn.php">
+                    <input type="hidden" name="notify_url" value="php/verify-ipn.php">
                     <!-- Payment Success Return page -->
-                    <input type="hidden" name="return" value="http://demo.web3canvas.com/themeforest/proland/success.html">
+                    <input type="hidden" name="return" value="success.html">
                     <!-- Payment Cancel Return page -->
-                    <input type="hidden" name="cancel_return" value="http://demo.web3canvas.com/themeforest/proland/index_buy_paypal.html">
+                    <input type="hidden" name="cancel_return" value="index_buy_paypal.html">
                     <!-- ./ End Paypal Hidden Fields -->
                     <div class="submit-area-2 row m0">
                         <button type="submit" class="btn btn-rounded js-preorder-btn btn-block"><span>Pay with Paypal</span></button>
