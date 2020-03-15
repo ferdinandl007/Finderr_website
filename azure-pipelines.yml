@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    ls $(Agent.BuildDirectory)/New/HTML
+  displayName: 'Run a multi-line script'
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'SRCF server'
+    sourceFolder: '$(Agent.BuildDirectory)/New/HTML'
+    contents: '**'
+    targetFolder: 'test'
+    readyTimeout: '20000'
